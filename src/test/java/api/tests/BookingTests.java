@@ -1,6 +1,5 @@
 package api.tests;
 
-
 import api.steps.ApiSteps;
 import io.restassured.response.Response;
 import net.serenitybdd.annotations.Steps;

@@ -15,14 +15,13 @@
     </properties>
 
     <dependencies>
-
         <!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-rest-assured -->
         <dependency>
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-rest-assured</artifactId>
             <version>4.2.16</version>
+            <scope>test</scope>
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-junit5 -->
         <dependency>
             <groupId>net.serenity-bdd</groupId>
@@ -30,7 +29,6 @@
             <version>4.2.16</version>
             <scope>test</scope>
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
         <dependency>
             <groupId>org.assertj</groupId>
@@ -38,7 +36,6 @@
             <version>3.27.3</version>
             <scope>test</scope>
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -46,8 +43,6 @@
             <version>1.18.36</version>
             <scope>provided</scope>
         </dependency>
-
-
     </dependencies>
 
     <build>
@@ -56,10 +51,7 @@
                 <groupId>net.serenity-bdd.maven.plugins</groupId>
                 <artifactId>serenity-maven-plugin</artifactId>
                 <version>4.2.16</version>
-                <configuration>
-
-                </configuration>
-                <executions>
+                 <executions>
                     <execution>
                         <id>serenity-reports</id>
                         <phase>post-integration-test</phase>

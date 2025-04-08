@@ -2,7 +2,6 @@ package api.helpers;
 
 import api.model.bookingdetails.BookingDetails;
 import api.model.bookingdetails.Bookingdates;
-import api.model.createBooking.CreateBooking;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -29,7 +28,5 @@ public class Helpers {
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
-
-
     }
 }
